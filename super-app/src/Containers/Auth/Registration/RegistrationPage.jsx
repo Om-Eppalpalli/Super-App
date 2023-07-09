@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './RegistrationPage.css';
 import registrationImage from "../../../assets/registration.png"
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 const RegistrationPage = () => {
     const [formData, setFormData] = useState({
@@ -34,7 +35,6 @@ const RegistrationPage = () => {
         const errors = validateForm();
         if (Object.keys(errors).length === 0) {
             localStorage.setItem('registrationData', JSON.stringify(formData));
-            // Redirect or perform further actions as needed
         } else {
             setFormErrors(errors);
         }
@@ -42,7 +42,7 @@ const RegistrationPage = () => {
 
     const validateForm = () => {
         const errors = {};
-        const requiredFields = ['name', 'username', 'email', 'mobile'];
+        const requiredFields = ['name', 'username', 'email', 'mobile', 'termsAccepted'];
 
         requiredFields.forEach((field) => {
             if (!formData[field]) {
@@ -50,7 +50,6 @@ const RegistrationPage = () => {
                 errors[field] = `${fieldName} is required`;
             }
         });
-        // Additional validation logic, such as checking for email format, etc.
         return errors;
     };
 
@@ -131,8 +130,13 @@ const RegistrationPage = () => {
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="termsAccepted" id='terms'>Share my registration data with Superapp</label>
+                                <div id='termsAccepted_error'>
+                                    {formErrors.termsAccepted && <p className="error-message">Check this box if you want to proceed</p>}
+                                </div>
                             </div>
                             <button type="submit" id='button'>SIGN UP</button>
+                            <Link to="/select-category"></Link>
+
                         </form>
                         <div>
                             <p id='p_term'>By clicking on Sign up. you agree to Superapp <span id='span_term'>Terms and<br />Conditions of Use</span></p>
@@ -141,9 +145,7 @@ const RegistrationPage = () => {
                     </div>
                 </div>
             </div>
-            <link to="" />
         </div>
-
     );
 };
 

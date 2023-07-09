@@ -95,3 +95,6 @@ body {
   font-size: 28px;
   font-weight: bold;
 }
+#termsAccepted_error{
+  margin-top: 5px;
+}
