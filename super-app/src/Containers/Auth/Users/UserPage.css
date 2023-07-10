@@ -88,3 +88,52 @@
 .category-list button {
   margin-bottom: 10px;
 }
+#left_container_down {
+  display: flex;
+  flex-direction: column;
+}
+
+#time_weather {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin-top: -150px;
+  margin-left: 50px;
+}
+
+#time_weather span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#time_weather span:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#time_weather span:nth-child(2) {
+  font-size: 36px;
+}
+
+#time_weather span:nth-child(3),
+#time_weather span:nth-child(4),
+#time_weather span:nth-child(5) {
+  font-size: 16px;
+}
+#time_date{
+  display: flex;
+  gap: 50px;
+}
+#weather_data{
+  display: flex;
+  gap: 50px;
+}
