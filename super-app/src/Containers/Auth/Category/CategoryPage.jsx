@@ -46,7 +46,6 @@ const SelectCategoryPage = () => {
 
     const handleNextPage = () => {
         if (selectedCategories.length >= 3) {
-            // Proceed to the next page
         } else {
             setShowError(true);
         }
@@ -195,6 +194,7 @@ const SelectCategoryPage = () => {
                         <button className='delete-button' id='next_button_id' onClick={handleNextPage}>
                             Next Page
                         </button>
+                        <Link to="/user-page">S</Link>
                     </div>
                 </div>
             </div>
