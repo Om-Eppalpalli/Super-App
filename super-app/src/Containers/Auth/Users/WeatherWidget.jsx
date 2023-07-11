@@ -74,16 +74,20 @@ const WeatherWidget = () => {
     <div>
       {weather ? (
         <div id="time_weather">
-          <div id="time_date">
-            <span>{formattedDate}</span>
-            <span>{formattedTime}</span>
+          <div>
+            <div id="time_date">
+              <div>{formattedDate}</div>
+              <div>{formattedTime}</div>
+            </div>
           </div>
-          <div id="weather_data">
-            <span>{currentLocation || defaultCity}</span>
-            <span>{weather.main.temp}°C</span>
-            <span>{weather.main.pressure} mbar<br />Pressure</span>
-            <span>{weather.wind.speed} km/h<br />Wind</span>
-            <span>{weather.main.humidity}%<br />Humidity</span>
+          <div>
+            <div id="weather_data">
+              <div>{currentLocation || defaultCity}</div>
+              <div>{weather.main.temp}°C</div>
+              <div>{weather.main.pressure} mbar<br />Pressure</div>
+              <div>{weather.wind.speed} km/h<br />Wind</div>
+              <div>{weather.main.humidity}%<br />Humidity</div>
+            </div>
           </div>
         </div>
       ) : (
