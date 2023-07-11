@@ -3,9 +3,10 @@ import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import UserImage1 from '../../../assets/Page3/UserImage1.png';
 import UserImage2 from '../../../assets/Page3/UserImage2-1.png';
-import UserImage3 from '../../../assets/Page3/UserImage3.png';
+import UserImage3 from '../../../assets/Page3/news.jpg';
 import './UserPage.css';
 import WeatherWidget from './WeatherWidget';
+import NewsSection from './NewsSection';
 
 const UserPage = () => {
     const registrationData = JSON.parse(localStorage.getItem('registrationData'));
@@ -43,11 +44,14 @@ const UserPage = () => {
                     </div>
                     <div id='left_container_down'>
                         <img src={UserImage2} alt="Forecast" id='image_fore' />
-                        <WeatherWidget/>
+                        <WeatherWidget />
                     </div>
                 </div>
                 <div id='right_container'>
-                    <img src={UserImage3} alt="MountEverest" id='image_mount' />
+                    <img src={UserImage3} alt="News" id='image_news' />
+                    <div id='news_section'>
+                        <NewsSection />
+                    </div>
                 </div>
             </div>
         </div>

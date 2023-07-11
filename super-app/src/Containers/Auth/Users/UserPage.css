@@ -66,15 +66,30 @@
   margin-top: 10px;
 }
 
-#right_container {
+#right_container{
   width: 50%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -55px;
 }
-
-#image_mount {
-  width: 82%;
-  margin-top: 50px;
-  margin-left: -40%;
+#image_news{
+  width: 100%;
+  margin-left: -100px;
+}
+#news_section{
+  width: 90%;
+  margin-left: -100px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#news_section a {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 .category-list {
