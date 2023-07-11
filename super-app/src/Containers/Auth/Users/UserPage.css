@@ -1,12 +1,15 @@
-#user_container{
+#user_container {
   color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3%;
 }
 
 #userImage1 {
   height: 100%;
   width: 100%;
 }
-#user_data{
+#user_data {
   width: 25%;
 }
 #user_image {
@@ -14,7 +17,7 @@
   width: 400px;
   height: 250px;
 }
-#data_category{
+#data_category {
   position: absolute;
   top: 10%;
   left: 35%;
@@ -24,13 +27,13 @@
   color: white;
   font-size: medium;
 }
-#user_data_buttons{
+#user_data_buttons {
   line-height: 50%;
 }
-#username_bold{
+#username_bold {
   font-weight: bold;
 }
-#buttons_div{
+#buttons_div {
   width: 100px;
   height: 30px;
   border-radius: 50px;
@@ -38,43 +41,94 @@
   margin: 2px;
   opacity: 50%;
 }
-#genre-list{
+#genre-list {
   margin-top: 10%;
 }
-#weather_widget{
+#weather_widget {
   width: 25%;
+  margin-top: 10px;
 }
-#weather_widget_div{
+#weather_widget_div {
   width: 400px;
   height: 150px;
   position: relative;
 }
-#image_fore{
+#image_fore {
   width: 100%;
   height: 100%;
 }
-#weather_reports{
+#weather_reports {
   position: absolute;
   top: 10%;
 }
-#time_weather{
+#time_weather {
   display: flex;
   flex-direction: column;
 }
-#time_date{
+#time_date {
   display: flex;
   justify-content: space-around;
   font-weight: bold;
 }
-#weather_data{
+#weather_data {
   display: flex;
   gap: 10px;
   margin-top: 10%;
 }
-#left_container{
+#left_mid_container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10%;
+  margin-left: 20%;
+}
+#left_mid_down_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#right_container {
+  width: 25%;
+}
+#image_news {
+  width: 100%;
+}
+#news_section {
+  color: #292929;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: -1%;
+}
+#news_section a {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+}
+#timer_div {
+  margin-top: 2%;
+}
+#news_div {
+  margin-right: 30%;
+  margin-left: -30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#browse_img_div {
+  margin-top: 15%;
+}
+#browse_img {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+#browse_img.clicked {
+  transform: scale(0.9);
+}
+/*#left_container{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 #left_container_up_right{
   width: 25%;
@@ -97,8 +151,15 @@
   color: #007bff;
   text-decoration: none;
 }
-
-
+#user_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#timer_widget{
+  margin-top: -100px;
+  margin-left: -290px;
+} */
 
 /* #user_container {
   display: flex;
